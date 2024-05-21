@@ -75,30 +75,47 @@ function mostrarCarritos() {
     const container = document.getElementById("data-container");
     container.innerHTML = '';
 
-    const ul = document.createElement("ul");
-    ul.classList.add("data-list");
+    if (carrito.length === 0) {
+        const mensaje = document.createElement("p");
+        mensaje.textContent = "Tu carrito está vacío";
+        container.appendChild(mensaje);
+    } else {
+        const ul = document.createElement("ul");
+        ul.classList.add("data-list");
 
-    carrito.forEach(producto => {
-        const li = document.createElement("li");
+        carrito.forEach((producto, index) => {
+            const li = document.createElement("li");
 
-        const img = document.createElement("img");
-        img.src = producto.imagen;
-        img.alt = producto.nombre;
+            const img = document.createElement("img");
+            img.src = producto.imagen;
+            img.alt = producto.nombre;
 
-        const nombre = document.createElement("p");
-        nombre.textContent = producto.nombre;
+            const nombre = document.createElement("p");
+            nombre.textContent = producto.nombre;
 
-        const precio = document.createElement("p");
-        precio.textContent = `Precio: $${producto.precio}`;
+            const precio = document.createElement("p");
+            precio.textContent = `Precio: $${producto.precio}`;
 
-        li.appendChild(img);
-        li.appendChild(nombre);
-        li.appendChild(precio);
+            const botonEliminar = document.createElement("button");
+            botonEliminar.textContent = "Eliminar del carrito";
+            botonEliminar.addEventListener("click", () => eliminarDelCarrito(index));
 
-        ul.appendChild(li);
-    });
+            li.appendChild(img);
+            li.appendChild(nombre);
+            li.appendChild(precio);
+            li.appendChild(botonEliminar);
 
-    container.appendChild(ul);
+            ul.appendChild(li);
+        });
+
+        container.appendChild(ul);
+    }
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    mostrarCarritos();
+    actualizarCarrito();
 }
 
 function actualizarCarrito() {
@@ -121,3 +138,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
