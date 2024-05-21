@@ -1,0 +1,842 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+
+/*********************MENU VERTICAL IZQUIERDO********************* */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 30%;
+    height: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .sidebar_section_arriba h1 {
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    height: 100%;
+  }
+  
+  .sidebar_section_medio{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar_section_medio a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+  .sidebar_section_medio a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 100px;
+    margin-top: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar_section_down a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+
+  .sidebar_section_down a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_h2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+
+  .sidebar_section_down_h2 h2{
+    margin-top: -24px;
+    font-size: 20px;
+  }
+/* 
+  *****************MAIN SECTION ******************************************************* */
+  .main-content {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: start;
+    overflow-y: scroll;
+    border: 2px solid orange;
+    height: 100%;
+    padding: 15px;
+    background: rgb(15, 15, 15);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.box {
+    text-align: center;
+    border: 2px solid rgb(129, 190, 15);
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+}
+
+.box img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+.box_alado{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid rgb(129, 190, 15);
+    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.box_alado_debajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_alado_debajo button{
+    font-size: 12px;
+    padding: 3px;
+    background: rgb(34, 59, 34);
+    color: white;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar, .sidebar_abrigos, .sidebar_camisetas, .sidebar_pantalones .main-content, .main-content_abrigos, .main-content_camisetas, .main-content_carrito, .main-content_pantalones, .mai {
+      width: 100%;
+      left: 0;
+  }
+}
+
+/* ***********************************ABRIGOS*********************************************************** */
+
+.sidebar_abrigos {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 30%;
+    height: auto;
+  }
+  
+  .container_abrigos {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+  }
+  
+  .sidebar_section_arriba_abrigos h1 {
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    height: 100%;
+  }
+  
+  .sidebar_section_medio_abrigos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar_section_medio_abrigos a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+  .sidebar_section_medio_abrigos a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_abrigos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 100px;
+    margin-top: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar_section_down_abrigos a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+
+  .sidebar_section_down_abrigos a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_h2_abrigos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+
+  .sidebar_section_down_h2_abrigos h2{
+    margin-top: -24px;
+    font-size: 20px;
+  }
+/* 
+  *****************MAIN SECTION ABRIGOS ******************************************************* */
+  .main-content_abrigos {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+
+.content-container_abrigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: start;
+    overflow-y: scroll;
+    border: 2px solid orange;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgb(15, 15, 15);
+}
+
+.box_abrigos {
+    text-align: center;
+    border: 2px solid orange;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+}
+
+.box_abrigos img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+.box_alado_Abrigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.box_alado_debajo_abrigos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_alado_debajo_abrigos button{
+    font-size: 12px;
+    padding: 3px;
+    background: rgb(34, 59, 34);
+    color: white;
+    border-radius: 8px;
+}
+
+/* ***************************CAMISETAS************************************************************** */
+
+.sidebar_camisetas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 30%;
+    height: auto;
+  }
+  
+  .container_camisetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .sidebar_section_arriba_camisetas h1 {
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    height: 100%;
+  }
+  
+  .sidebar_section_medio_camisetas{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar_section_medio_camisetas a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+  .sidebar_section_medio_camisetas a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_camisetas{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 100px;
+    margin-top: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar_section_down_camisetas a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+
+  .sidebar_section_down_camisetas a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_h2_camisetas{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+
+  .sidebar_section_down_h2_camisetas h2{
+    margin-top: -24px;
+    font-size: 20px;
+  }
+/* 
+  *****************MAIN SECTION CAMISETAS ******************************************************* */
+  .main-content_camisetas{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+
+.content-container_camisetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: start;
+    overflow-y: scroll;
+    border: 2px solid orange;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgb(15, 15, 15);
+}
+
+.box_camisetas {
+    text-align: center;
+    border: 2px solid orange;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+}
+
+.box_camisetas img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+.box_alado_camisetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.box_alado_debajo_camisetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_alado_debajo_camisetas button{
+    font-size: 12px;
+    padding: 3px;
+    background: rgb(34, 59, 34);
+    color: white;
+    border-radius: 8px;
+}
+
+/* *********************************PANTALONES********************************************************** */
+
+.sidebar_pantalones {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 30%;
+    height: auto;
+  }
+  
+  .container_pantalones {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .sidebar_section_arriba_pantalones h1 {
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    height: 100%;
+  }
+  
+  .sidebar_section_medio_pantalones{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar_section_medio_pantalones a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+  .sidebar_section_medio_pantalones a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_pantalones{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 100px;
+    margin-top: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar_section_down_pantalones a{
+    cursor: pointer;
+    text-decoration: none;
+    color: orange;
+  }
+
+  .sidebar_section_down_pantalones a:hover{
+    color: blue;
+  }
+
+  .sidebar_section_down_h2_pantalones{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+
+  .sidebar_section_down_h2_pantalones h2{
+    margin-top: -24px;
+    font-size: 20px;
+  }
+/* 
+  *****************MAIN SECTION PANTALONES ******************************************************* */
+  .main-content_pantalones{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+
+.content-container_pantalones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: start;
+    overflow-y: scroll;
+    border: 2px solid orange;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgb(15, 15, 15);
+}
+
+.box_pantalones {
+    text-align: center;
+    border: 2px solid orange;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+}
+
+.box_pantalones img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+.box_alado_pantalones{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.box_alado_debajo_pantalones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_alado_debajo_pantalones button{
+    font-size: 12px;
+    padding: 3px;
+    background: rgb(34, 59, 34);
+    color: white;
+    border-radius: 8px;
+}
+
+/* *******************************CARRITO****************************************************************** */
+
+.main-content_carrito{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+
+.content-container_carrito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(auto, auto);
+    grid-gap: 20px;
+    justify-content: start;
+    align-content: start;
+    overflow-y: scroll;
+    border: 2px solid orange;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgb(15, 15, 15);
+}
+.box_carrito {
+    text-align: center;
+    border: 2px solid orange;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.column p {
+    margin: 5px 0;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 70px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+.item img {
+    max-width: 70%;;
+    max-height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text p {
+    margin: 5px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+img[type="imagencarro"]{
+    width: 50px;
+}
+
+.item_carritos_Abajo{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 70px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.columna_Abajo_carrito{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid orange;
+  gap: 50px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.Comprar_ahora , .column_abajo_Carrito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(14, 85, 14);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.column_abajo_Carrito a{
+  color: white;
+  text-decoration: none;
+}
+
+.Comprar_ahora a{
+  color: white;
+  text-decoration: none;
+}
+
+.columna_Abajo_carrito_cantidad p{
+  font-size: 14px;
+}
+
+.columna_Abajo_carrito_cantidad small{
+  font-size: 16px;
+}
+
+/* ****************************************+CARRITO VACIO******************************** */
+
+.carritovacioh2 h2{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* *******************************************CARRITOLLENO*********************************** */
+
+.imagenpantalon01{
+  cursor: pointer;
+}
+
+
