@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen JavaScript</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
     <section class="sidebar">
@@ -12,13 +13,13 @@
             <div class="sidebar_section_arriba">
                 <h1>Campus Shop</h1>
                 <div class="sidebar_section_medio">
-                    <a href="">✻ Todos los productos</a>
-                    <a href="views/abrigos.html">✻ Abrigos</a>
-                    <a href="views/camisetas.html">✻ Camisetas</a>
-                    <a href="views/pantalones.html">✻ Pantalones</a>
+                    <a id="Allproducts" href="">✻ Todos los productos</a>
+                    <a id="Abrigos" href="">✻ Abrigos</a>
+                    <a id="Camisetas" href="">✻ Camisetas</a>
+                    <a id="Pantalones" href="">✻ Pantalones</a>
                 </div>
                 <div class="sidebar_section_down">
-                    <a href="views/carritos.html">✻ Carritos ㅤㅤㅤㅤ3</a>
+                    <a id="carritos" href="">✻ Carritos ㅤㅤㅤㅤ</a>
                 <div class="sidebar_section_down_h2">
                     <h2>© 2024 Camper</h2>
             </div>
@@ -26,187 +27,7 @@
       </section>
     <section class="main-content">
         <div class="content-container">
-            <h1>Todos los productos</h1>
-            <div class="box">
-                <img src="storage/img/Camiseta1-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 01</h4>
-                    <div class="box_alado_debajo">
-                        <small>$11.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Camiseta2-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 02</h4>
-                    <div class="box_alado_debajo">
-                        <small>$16.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Camiseta3-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 03</h4>
-                    <div class="box_alado_debajo">
-                        <small>$10.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Camistea6-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 04</h4>
-                    <div class="box_alado_debajo">
-                        <small>$8.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Camiseta5-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 05</h4>
-                    <div class="box_alado_debajo">
-                        <small>$15.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Camistea6-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Camiseta 06</h4>
-                    <div class="box_alado_debajo">
-                        <small>$20.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon2-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 01</h4>
-                    <div class="box_alado_debajo">
-                        <small>$25.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon2-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 02</h4>
-                    <div class="box_alado_debajo">
-                        <small>$15.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon2-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 03</h4>
-                    <div class="box_alado_debajo">
-                        <small>$35.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon5-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 04</h4>
-                    <div class="box_alado_debajo">
-                        <small>$21.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon5-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 05</h4>
-                    <div class="box_alado_debajo">
-                        <small>$13.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Pantalon5-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Pantalon 06</h4>
-                    <div class="box_alado_debajo">
-                        <small>$10.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo1-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 01</h4>
-                    <div class="box_alado_debajo">
-                        <small>$12.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo1-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 02</h4>
-                    <div class="box_alado_debajo">
-                        <small>$14.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo1-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 03</h4>
-                    <div class="box_alado_debajo">
-                        <small>$19.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo4-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 04</h4>
-                    <div class="box_alado_debajo">
-                        <small>$29.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo4-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 05</h4>
-                    <div class="box_alado_debajo">
-                        <small>$39.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="storage/img/Abrigo4-removebg-preview.png" alt="Imagen 1">
-                <div class="box_alado">
-                    <h4>Abrigo 06</h4>
-                    <div class="box_alado_debajo">
-                        <small>$9.00</small>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-            </div>
+            <div id="data-container"></div>
         </div>
     </section>
 </body>
